@@ -1,0 +1,533 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-primary: 'Raleway', sans-serif;
+    --font-secondary: 'Open Sans', sans-serif;
+
+    --blue-intro-email: hsl(217, 28%, 15%);
+    --blue-main-bg: hsl(218, 28%, 13%);
+    --blue-footer-bg: hsl(216, 53%, 9%);
+    --blue-testimonials-bg: hsl(219, 30%, 18%);
+    --cyan: hsl(176, 68%, 64%);
+    --blue: hsl(198, 60%, 50%);
+    --blue-hover: hsl(198, 99%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    color: white;
+    font-family: var(--font-secondary);
+    overflow-x: hidden;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.header {
+    background-color: var(--blue-intro-email);
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.header-container {
+    width: 90%;
+    max-width: 1440px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.logo {
+    height: 30px;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-item {
+    margin-left: 1em;
+}
+
+.containor{
+    font-size: 24px;
+    background-color: var(--blue-intro-email);
+    background-image: url(./images/bg-curvy-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 150%;
+}
+
+.box {
+    width: 85%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 1em 0 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.box-image {
+    max-width: 100%;
+}
+
+.box-title {
+    font-family: var(--font-primary);
+    font-size: 1em;
+    padding-top: 1em;
+    line-height: 1.5em;
+}
+
+.box-desc {
+    font-size: 0.6em;
+    padding: 1em 0 2em;
+}
+
+.button {
+    font-size: 14px;
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+    border: none;
+    border-radius: 50px;
+    background-color: var(--blue);
+    font-family: var(--font-primary);
+    font-weight: 700;
+    padding: 1.3em 0;
+    outline: none;
+    transition: .3s;
+    color: white;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--blue-hover);
+}
+
+.containor-2 {
+    background-color: var(--blue-main-bg);
+    font-size: 18px;
+}
+
+.box-2 {
+    width: 85%;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 4em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3em;
+    width: 340px;
+    height: 200px;
+}
+
+.image-container {
+    margin: auto 0;
+    height: 50%;
+}
+
+.info {
+    height: 50%;
+}
+
+.title {
+    font-family: var(--font-primary);
+    font-size: 1em;
+    text-align: center;
+}
+
+.desc {
+    text-align: center;
+    font-size: 0.777em;
+   
+}
+
+.Box3{
+    background-color: var(--blue-main-bg);
+    font-size: 18px;
+    padding: 3em 0;
+}
+
+.container3 {
+    width: 85%;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.box-image3 {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.containor-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.containor-title {
+    font-size: 1em;
+    padding-top: 2em;
+}
+
+.containor-desc {
+    font-size: 0.777em;
+    padding-top: 1em;
+}
+
+.link {
+    display: inline-block;
+    font-size: 0.777em;
+    padding-top: 1.5em;
+    color: rgb(64, 205, 205);
+    text-decoration: underline;
+}
+
+
+.dots {
+    background-color: var(--blue-main-bg);
+    font-size: 12px;
+}
+
+.dots-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 4em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dots-card {
+    background-color: var(--blue-testimonials-bg);
+    margin-bottom: 2em;
+    padding: 2em;
+    border-radius: 5px;
+    max-width: 320px;
+}
+
+.dots-card:first-child {
+    background-image: url(/images/bg-quotes.png);
+    background-repeat: no-repeat;
+    background-position: 0 -2em;
+}
+
+.dots-card:last-child {
+    margin-bottom: 0;
+}
+
+.dot-card {
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+.dots-cards {
+    display: flex;
+    padding-top: 1em;
+}
+
+.dot-user {
+    height: 3em;
+    border-radius: 50%;
+}
+
+.dot-info {
+    padding-left: 1em;
+}
+
+.dot-user {
+    font-weight: 700;
+}
+
+.sign-up {
+    background-color: var(--blue-main-bg);
+    font-size: 12px;
+}
+
+.sign-up__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    top: 9em;
+    background-color: var(--blue-intro-email);
+    border-radius: 5px;
+    box-shadow: 6px 7px 19px -1px rgba(0, 0, 0, 0.75);
+    padding: 2.5em;
+}
+
+.sign-up__title {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.sign-up__desc {
+    padding: 1.5em 0 2em;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+.sign-up__form {
+    display: flex;
+    flex-direction: column;
+    max-width: initial;
+    width: 100%;
+}
+
+.sign-up__input {
+    width: 100%;
+    max-width: auto;
+    height: 45px;
+    border: none;
+    border-radius: 50px;
+    padding-left: 2em;
+    outline: none;
+}
+
+.button--form {
+    max-width: initial;
+    width: 100%;
+    margin-top: 1.5em;
+}
+
+.button--form:hover {
+    background-color: rgb(74, 74, 120);
+}
+
+.footer {
+    background-color: var(--blue-footer-bg);
+    font-size: 12px;
+}
+
+.footer__container {
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 12em 0 2em;
+}
+
+.footer__section-contact {
+    display: flex;
+    margin: 1em 0;
+}
+
+.footer__icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%
+}
+
+.footer__contact-info {
+    width: 90%;
+    padding-left: 1em;
+}
+
+.footer__info {
+    margin: 1em 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__list {
+    display: flex;
+    flex-direction: column;
+    padding: .8em 0;
+}
+
+.footer__item {
+    padding-top: 1em;
+}
+
+.footer__link {
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+
+@media screen and (min-width: 768px) {
+    .intro {
+        font-size: 28px;
+        background-image: url(./images/bg-curvy-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: initial;
+    }
+
+    .computer {
+        font-size: 20px;
+    }
+
+    .features__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 1.5em;
+        justify-content: center;
+        justify-items: center;
+        padding: 4em 0;
+        max-width: 75%;
+    }
+
+    .feature {
+        margin: 0;
+    }
+
+    .feature:last-child {
+        padding: 0;
+    }
+
+    .quotes {
+        font-size: 16px;
+    }
+
+}
+
+.sign-up__container {
+    padding: 1.5em 2.5em;
+}
+
+.sign-up__title {
+    font-size: 2em;
+}
+
+.sign-up__description {
+    font-size: 1em;
+    width: 80%;
+}
+
+.footer {
+    font-size: 18px;
+}
+
+.footer__content {
+    display: flex;
+}
+
+.footer__contact {
+    width: 40%;
+}
+
+.footer__info {
+    width: 40%;
+    margin: 0 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer__list {
+    width: 50%;
+}
+
+.footer__item:first-child {
+    padding: 0;
+}
+
+.footer__social-networks {
+    width: 20%;
+}
+
+.footer__copy {
+    padding: 3em 0 0;
+}
+
+@media screen and (min-width: 1024px) {
+    .how-works {
+        font-size: 24px;
+    }
+
+    .how-works__container {
+        flex-direction: row;
+    }
+
+    .how-works__title {
+        font-size: 1.5em;
+    }
+
+    .how-works__image {
+        max-width: 50%;
+        height: auto;
+    }
+
+    .how-works__info {
+        width: 50%;
+        padding-left: 3em;
+    }
+
+    .quotes__container {
+        flex-direction: row;
+        width: initial;
+    }
+
+    .quote-card {
+        margin: 0 2em;
+    }
+
+    .sign-up {
+        font-size: 16px;
+    }
+
+    .sign-up__form {
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .sign-up__input {
+        width: 70%;
+        height: 53px;
+        margin-right: 1em;
+    }
+
+    .button--form {
+        width: 30%;
+        height: 53px;
+        margin: 0;
+    }
+} 
+
+ @media screen and (min-width: 1440px) {
+    .intro {
+        background-position-y: 8em;
+        background-size: cover;
+    }
+
+    .how-works {
+        font-size: 32px;
+    }
+}
